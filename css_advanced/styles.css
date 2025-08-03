@@ -1,0 +1,70 @@
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #000; /* fallback */
+}
+
+header {
+    background: linear-gradient(to bottom, #1c1c1c, #000000);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+main section:first-of-type {
+    background: linear-gradient(to bottom, #1c1c1c, #000000);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+main section:first-of-type h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+main section:first-of-type span {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main section:first-of-type button {
+    display: block;
+    margin: 40px auto 0;
+    background-color: #9e57ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+}
