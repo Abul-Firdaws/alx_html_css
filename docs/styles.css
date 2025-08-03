@@ -88,7 +88,7 @@ main section:nth-of-type(2) > div:first-child img {
 
 main section:nth-of-type(2) blockquote {
   font-size: 1.25rem;
-  font-style: italic;
+  font-style: normal;
   color: #333;
   margin-bottom: 1rem;
   line-height: 1.6;
