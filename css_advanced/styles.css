@@ -1,188 +1,232 @@
-/* -----------------------------
-   Global Styles
------------------------------ */
+/* ===== CSS RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE STYLES ===== */
 body {
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #fff;
-  color: #333;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-button {
-  background-color: #8e44ad;
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  text-transform: uppercase;
+/* ===== HEADER STYLES ===== */
+header {
+    background-color: transparent;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    top: 0;
 }
 
-h1, h2, h3 {
-  font-family: 'Spin-Cycle-OT', cursive;
-  text-align: center;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 2rem;
-  justify-content: flex-end;
+.logo {
+    height: 35px;
+    width: auto;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to bottom, #111, #000);
-  padding: 1rem 2rem;
-  color: #fff;
+    display: flex;
 }
 
-nav img {
-  width: 100px;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
 }
 
-/* -----------------------------
-   Banner Section
------------------------------ */
-section:first-of-type {
-  background-image: url('./images/Object.png');
-  background-size: cover;
-  background-position: center;
-  padding: 4rem 2rem;
-  color: #fff;
-  text-align: center;
+.nav-links a:hover {
+    opacity: 0.9;
 }
 
-/* -----------------------------
-   Learn from the Pros Section
------------------------------ */
-section:nth-of-type(1) div:last-child {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  margin-top: 2rem;
+/* ===== BANNER SECTION ===== */
+.banner {
+    background: url('images/Object.png') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 120px 20px 80px;
+    position: relative;
 }
 
-section:nth-of-type(1) div:last-child div img {
-  border-radius: 50%;
-  width: 120px;
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto 80px;
 }
 
-section:nth-of-type(1) div:last-child div {
-  text-align: center;
-  max-width: 180px;
+.banner-content h1 {
+    font-size: 120px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    color: white;
 }
 
-section:nth-of-type(1) div:last-child div:nth-child(1) img {
-  content: url('./images/1.png');
-}
-section:nth-of-type(1) div:last-child div:nth-child(2) img {
-  content: url('./images/3.png');
-}
-section:nth-of-type(1) div:last-child div:nth-child(3) img {
-  content: url('./images/4.png');
-}
-section:nth-of-type(1) div:last-child div:nth-child(4) img {
-  content: url('./images/5.png');
+.banner-keywords {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 40px;
 }
 
-/* -----------------------------
-   Most Popular Tutorials
------------------------------ */
-section:nth-of-type(3) > div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 2rem;
+.banner-keywords span {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
 }
 
-section:nth-of-type(3) > div > div {
-  border: 1px solid #eee;
-  padding: 1rem;
-  border-radius: 10px;
-  background: #fafafa;
+.register-btn {
+    background: #C271FF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-section:nth-of-type(3) > div > div img:first-child {
-  width: 100%;
-  border-radius: 10px;
+.register-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.6);
 }
 
-section:nth-of-type(3) > div > div > div:nth-child(3) img {
-  content: url('./images/play.png');
-  width: 20px;
+/* ===== LEARN FROM PROS SECTION (inside banner) ===== */
+.learn-from-pros {
+    text-align: center;
+    color: white;
+    width: 100%;
 }
 
-section:nth-of-type(3) > div > div > div:nth-child(4) img {
-  content: url('./images/rating.png');
-  width: 100px;
+.learn-from-pros h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 60px;
+    color: white;
 }
 
-/* -----------------------------
-   Free Membership Section
------------------------------ */
-section:nth-of-type(4) {
-  background: #f0f0f0;
-  padding: 2rem;
-  text-align: center;
+.learn-from-pros .purple-text {
+    color: #C271FF;
 }
 
-section:nth-of-type(4) div {
-  display: inline-block;
-  margin: 1rem;
-  max-width: 200px;
+.pros-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-section:nth-of-type(4) div img {
-  content: url('./images/smile.png');
-  width: 80px;
+.pro-card {
+    text-align: center;
+    flex: 0 0 200px;
 }
 
-section:nth-of-type(4) button {
-  margin-top: 2rem;
+.pro-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-/* -----------------------------
-   Footer
------------------------------ */
-footer {
-  background: #000;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.pro-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
 }
 
-footer img {
-  content: url('./images/logo.png');
-  width: 100px;
+.pro-card p {
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.9;
+    line-height: 1.5;
+    color: white;
 }
 
-footer div {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 15px;
+    }
+    
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .banner-content h1 {
+        font-size: 60px;
+    }
+    
+    .banner-keywords {
+        gap: 40px;
+    }
+    
+    .pros-grid {
+        gap: 40px;
+    }
+    
+    .pro-card {
+        flex: 0 0 150px;
+    }
+    
+    .pro-card img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
-footer i {
-  color: #fff;
-  font-size: 1.5rem;
+@media (max-width: 480px) {
+    .banner-content h1 {
+        font-size: 40px;
+    }
+    
+    .banner-keywords {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .pros-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 }
