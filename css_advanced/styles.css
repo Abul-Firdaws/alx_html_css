@@ -285,16 +285,16 @@ nav {
 
 .quote-content blockquote {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.6;
     margin-bottom: 25px;
-    font-style: italic;
+    font-style: normal;
     color: white;
 }
 
 .quote-author h3 {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
     color: white;
     margin: 0 0 8px 0;
 }
