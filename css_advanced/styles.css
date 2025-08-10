@@ -445,9 +445,11 @@ nav {
     font-weight: 600;
 }
 .membership-section {
-    width: 1440px;
-    height: 502px;
-    background-color: #0b0d17; /* deep blue-black */
+    width: 100%;              /* ✅ Full width of screen */
+    max-width: 1440px;        /* ✅ Match other sections’ content width */
+    margin: 0 auto;           /* ✅ Center align the section */
+    height: auto;             /* ✅ Let content define the height */
+    background-color: #0b0d17; 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto;
@@ -455,6 +457,7 @@ nav {
     align-items: start;
     padding: 40px;
     gap: 30px;
+    box-sizing: border-box;   /* ✅ Prevent padding from adding to width */
 }
 
 /* Heading spans all columns */
@@ -553,7 +556,8 @@ nav {
 }
 
 footer {
-  width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   height: 249px;
   background-color: #0b0c10; /* deep blue-black */
   color: white;
@@ -564,7 +568,7 @@ footer {
 
 footer section {
   width: 100%;
-  max-width: 1200px; /* keeps content centered */
+  max-width: 1440px; /* keeps content centered */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -572,11 +576,13 @@ footer section {
 
 footer section > div {
   width: 100%;
+  max-width: 1200px; /* match other content width */
   display: flex;
-  justify-content: space-between; /* logo left, socials right */
+  justify-content: space-between; /* or center with gap */
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
 
 footer img.logo {
   width: 169px;
@@ -593,6 +599,7 @@ footer p {
   font-size: 0.8rem;
   font-weight: 180;
   color: #c8c2c2;
+  margin-top: 100px
 }
 
 /* Optional: icon hover color */
