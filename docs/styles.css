@@ -444,3 +444,72 @@ nav {
     font-size: 14px;
     font-weight: 600;
 }
+.membership-section {
+    width: 1440px;
+    height: 502px;
+    background-color: #0b0d17; /* deep blue-black */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: start;
+    padding: 40px;
+    gap: 30px;
+}
+
+/* Heading spans all columns */
+.membership-section h2 {
+    grid-column: 1 / -1;
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+/* Highlighted 'Free' in heading */
+.membership-section h2 .highlight {
+    color: #C271FF; /* purple */
+    font-weight: 700;
+}
+
+/* Each benefit card */
+.membership-benefit {
+    text-align: center;
+    color: white;
+    width: 200px;
+}
+
+.membership-benefit img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.membership-benefit h3 {
+    font-size: 18px;
+    font-weight: 550;
+    color: white;
+}
+
+.membership-benefit p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Button spans all columns and centers */
+.register-button {
+    grid-column: 1 / -1;
+    background-color: #C271FF; /* purple */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    justify-self: center;
+}
+
+.register-button:hover {
+    background-color: #a856d8; /* darker purple on hover */
+}
