@@ -306,3 +306,141 @@ nav {
     font-style: italic;
     margin: 0;
 }
+
+/* ===== VIDEO TUTORIALS SECTION ===== */
+/* put this in place of your current .tutorials block */
+.tutorials {
+    max-width: 1228px;       /* keeps the design width */
+    width: 100%;
+    min-height: 450px;       /* keeps the intended height but allows flexibility */
+    background: #ffffff;
+    padding: 60px 40px;
+    margin: 30px auto;       /* places it right after the previous section */
+    box-sizing: border-box;
+    /* do NOT use top/left here — removed */
+    position: static;        /* default — safe to be explicit when overriding */
+    opacity: 1;
+}
+
+
+.tutorials h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    color: #071629;
+    margin-bottom: 50px;
+}
+
+.tutorials h2 .highlight {
+    color: #C271FF; /* your pink shade */
+    font-weight: 600; /* heavier than the rest */
+}
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    height: calc(100% - 120px);
+}
+
+.video-thumbnail {
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: fit-content;
+}
+
+.video-thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.thumbnail-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-wrapper:hover .play-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-thumbnail h3 {
+    padding: 15px 15px 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #071629;
+    line-height: 1.2;
+}
+
+.video-thumbnail > p {
+    padding: 0 15px 15px;
+    color: rgba(7, 22, 41, 0.5);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.video-info {
+    padding: 0 15px 20px;
+    display: flex;
+    flex-direction: column; /* stack name above rating/time */
+    align-items: flex-start; /* align content to the left */
+    gap: 5px; /* space between name and rating/time */
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviewer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer h4 {
+    font-size: 14px;
+    color: #C271FF;
+    font-weight: 600;
+}
+
+.rating-time {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating {
+    height: 15px;
+    width: auto;
+}
+
+.duration {
+    color: #C271FF;
+    font-size: 14px;
+    font-weight: 600;
+}
