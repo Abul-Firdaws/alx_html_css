@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Headphones</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="0-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://www.fontsquirrel.com/fonts/Spin-Cycle-OT" rel="stylesheet">
 </head>
 <body>
     <header>
-    <div class="header-container">
-      <img src="images/logo_headphones.png" alt="Headphones Logo" class="logo">
-      <nav>logo_headphones
-        <ul class="nav-links">
-          <li><a href="#">what we do</a></li>
-          <li><a href="#">our results</a></li>
-          <li><a href="#">contact us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="header-container">
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label> <!-- hamburger -->
+    <label for="menu-toggle" class="menu-close">&times;</label> <!-- close X -->
+
+    <img src="images/logo_headphones.png" alt="Headphones Logo" class="logo">
+    
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#what-we-do">what we do</a></li>
+        <li><a href="#our-results">our results</a></li>
+        <li><a href="#contact-us">contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 <main>
         <section class="banner">
     <div class="banner-content">
@@ -30,6 +37,8 @@
         <button class="register-btn">CALL TO ACTION</button>
     </div>    
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem similique minima expedita? 
+        Ullam ex veniam non ratione nam dignissimos earum nobis neque minima, voluptatem libero vitae modi officiis ab.
+        orem, ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem similique minima expedita? 
         Ullam ex veniam non ratione nam dignissimos earum nobis neque minima, voluptatem libero vitae modi officiis ab.</p>
 </body>
 </html>
