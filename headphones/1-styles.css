@@ -1,0 +1,274 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+  --max-width: 1000px;
+  --primary-color: #FF6565;
+  --text-color: #fff;
+  --font-main: 'Source Sans Pro', sans-serif;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: var(--font-main);
+  line-height: 1.5;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: transparent;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+.header-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:active {
+  color: var(--primary-color);
+}
+
+/* ===== HERO SECTION ===== */
+.banner {
+  height: 100vh;
+  background: url('images/headphones_hero_1.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.banner-content {
+  max-width: 700px;
+  padding: 20px;
+}
+
+.banner-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.banner-content p {
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 15px 40px;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+  margin-bottom: 50px;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+/* Style for the paragraph under the CTA */
+.banner > p {
+  max-width: 700px; /* controls how wide it can stretch */
+  margin: 20px auto 0; /* top margin 20px, auto centers horizontally */
+  text-align: center; /* optional, center-aligns text */
+  line-height: 1.5; /* improves readability */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .banner {
+    padding-top: 120px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Hide checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Default hidden icons */
+.menu-icon,
+.menu-close {
+  display: none;
+  font-size: 2rem;
+  color: white; /* white color for icons */
+  cursor: pointer;
+  user-select: none;
+  /* Make sure icons are vertically centered */
+  line-height: 1;
+}
+
+/* Position the hamburger icon to the left of the logo */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative; /* to allow absolute positioning inside if needed */
+}
+
+/* Make sure the hamburger and close icons appear before the logo */
+.menu-icon,
+.menu-close {
+  order: -1; /* place these before the logo */
+  margin-right: 20px; /* space between icon and logo */
+}
+
+@media (max-width: 480px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: transparent;
+    width: 200px;
+  }
+
+  /* Show menu & close icon when checkbox is checked */
+  .menu-toggle:checked ~ nav ul {
+    display: flex;
+  }
+  .menu-toggle:checked ~ .menu-icon {
+    display: none;
+  }
+  .menu-toggle:checked ~ .menu-close {
+    display: block;
+  }
+}
+
+.what-we-do h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px; /* space below h2 */
+  color: var(--primary-color);
+}
+
+.what-we-do .intro {
+  font-size: 1.125rem;
+  color: #555;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px; /* space below paragraph */
+  line-height: 1.5;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between; /* spread 4 features evenly */
+  gap: 20px;
+  flex-wrap: nowrap; /* keep them in one row */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature {
+  flex: 1 1 0; /* equally share width */
+  max-width: 230px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+}
+
+.icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 768px) {
+  .features {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feature {
+    max-width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .feature {
+    max-width: 100%;
+  }
+}
