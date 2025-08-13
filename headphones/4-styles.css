@@ -1,0 +1,621 @@
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('fonts/holberton_school-icon/fonts/holberton_school-icon.eot?sq4eq4');
+  src: url('fonts/holberton_school-icon/fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+       url('fonts/holberton_school-icon/fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+       url('fonts/holberton_school-icon/fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+       url('fonts/holberton_school-icon/fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'holberton_school-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Base icon font styles */
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  font-family: 'holberton_school-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.features .feature i.holberton_school-icon-ic_hearing,
+.features .feature i.holberton_school-icon-ic_video,
+.features .feature i.holberton_school-icon-ic_music,
+.features .feature i.holberton_school-icon-ic_sound {
+    color: var(--primary-color) !important;
+    font-size: 5rem !important;
+}
+     /* Increase size (adjust as needed) */
+}
+
+
+/* Feature section icon overrides */
+.features .feature i[class^="holberton_school-icon-"],
+.features .feature i[class*=" holberton_school-icon-"] {
+  font-size: 5rem;    /* Increase icon size */
+  color: var(--primary-color);      /* Change icon color */
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-arrow_1:before {
+  content: "\e900";
+}
+.holberton_school-icon-arrow_2:before {
+  content: "\e901";
+}
+.holberton_school-icon-arrow_3:before {
+  content: "\e902";
+}
+.holberton_school-icon-arrow_4:before {
+  content: "\e903";
+}
+.holberton_school-icon-arrow_5:before {
+  content: "\e904";
+}
+.holberton_school-icon-check:before {
+  content: "\e905";
+}
+.holberton_school-icon-ic_bag:before {
+  content: "\e906";
+}
+.holberton_school-icon-ic_cart:before {
+  content: "\e907";
+}
+.holberton_school-icon-ic_facebook:before {
+  content: "\e908";
+}
+.holberton_school-icon-ic_hearing:before {
+  content: "\e909";
+}
+.holberton_school-icon-ic_instagram:before {
+  content: "\e90a";
+}
+.holberton_school-icon-ic_laptop:before {
+  content: "\e90b";
+}
+.holberton_school-icon-ic_money:before {
+  content: "\e90c";
+}
+.holberton_school-icon-ic_music:before {
+  content: "\e90d";
+}
+.holberton_school-icon-ic_sound:before {
+  content: "\e90e";
+}
+.holberton_school-icon-ic_twitter:before {
+  content: "\e90f";
+}
+.holberton_school-icon-ic_video:before {
+  content: "\e910";
+}
+.holberton_school-icon-menu:before {
+  content: "\e911";
+}
+.holberton_school-icon-search_1:before {
+  content: "\e912";
+}
+.holberton_school-icon-search_2:before {
+  content: "\e913";
+}
+.holberton_school-icon-star:before {
+  content: "\e914";
+}
+
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== VARIABLES ===== */
+:root {
+  --max-width: 1000px;
+  --primary-color: #FF6565;
+  --text-color: #fff;
+  --font-main: 'Source Sans Pro', sans-serif;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: var(--font-main);
+  line-height: 1.5;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: transparent;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+.header-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:active {
+  color: var(--primary-color);
+}
+
+/* ===== HERO SECTION ===== */
+.banner {
+  height: 800px;
+  width: 1400px;
+    margin: 0 auto; /* centers the section horizontally */
+  background: url('images/headphones_hero_1.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.banner-content {
+  max-width: 700px;
+  padding: 20px;
+}
+
+.banner-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.banner-content p {
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 15px 40px;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+  margin-bottom: 50px;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+/* Style for the paragraph under the CTA */
+.banner > p {
+  max-width: 700px; /* controls how wide it can stretch */
+  margin: 20px auto 0; /* top margin 20px, auto centers horizontally */
+  text-align: center; /* optional, center-aligns text */
+  line-height: 1.5; /* improves readability */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .banner {
+    padding-top: 120px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Hide checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Default hidden icons */
+.menu-icon,
+.menu-close {
+  display: none;
+  font-size: 2rem;
+  color: white; /* white color for icons */
+  cursor: pointer;
+  user-select: none;
+  /* Make sure icons are vertically centered */
+  line-height: 1;
+}
+
+/* Position the hamburger icon to the left of the logo */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative; /* to allow absolute positioning inside if needed */
+}
+
+/* Make sure the hamburger and close icons appear before the logo */
+.menu-icon,
+.menu-close {
+  order: -1; /* place these before the logo */
+  margin-right: 20px; /* space between icon and logo */
+}
+
+@media (max-width: 480px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: transparent;
+    width: 200px;
+  }
+
+  /* Show menu & close icon when checkbox is checked */
+  .menu-toggle:checked ~ nav ul {
+    display: flex;
+  }
+  .menu-toggle:checked ~ .menu-icon {
+    display: none;
+  }
+  .menu-toggle:checked ~ .menu-close {
+    display: block;
+  }
+}
+
+.what-we-do {
+  height: 700px;
+  width: 1400px;
+  margin: 0 auto; /* centers the section horizontally */
+  background-color: #fff; /* or your background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers content vertically */
+  align-items: center;     /* centers content horizontally */
+  padding: 20px;
+  box-sizing: border-box; /* includes padding in width/height */
+}
+
+.what-we-do h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px; /* space below h2 */
+  color: black;
+  margin-top: 70px; /* space above h2 */
+    font-weight: 550;
+}
+
+.what-we-do .intro {
+  font-size: 1.125rem;
+  color: #555;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 70px; /* space below paragraph */
+  line-height: 1.5;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between; /* spread 4 features evenly */
+  gap: 20px;
+  flex-wrap: nowrap; /* keep them in one row */
+  max-width: 1000px;
+  margin: 0 auto 100px;
+}
+
+.feature {
+  flex: 1 1 0; /* equally share width */
+  max-width: 230px;
+  background: transparent;
+  padding: 0;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+}
+
+.icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 768px) {
+  .features {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feature {
+    max-width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .feature {
+    max-width: 100%;
+  }
+}
+
+.our-results {
+  height: 650px;
+  width: 1400px;
+  margin: 0 auto; /* centers the section horizontally */
+  background-image: url('images/headphones_hero_2.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 20px;
+    color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* spaces heading and pentagons */
+}
+
+.our-results .overlay {
+  background: transparent; /* dark overlay for text visibility */
+  padding: 30px;
+}
+
+.our-results h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  margin-top: 40px; /* space above h2 */
+}
+
+.our-results p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0 auto 50px;  /* centers the block */
+  max-width: 600px;     /* keeps the text from stretching too wide */
+}
+
+.pentagon-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 100px; /* pushes them down from the text */
+}
+
+.pentagon {
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+
+.pentagon img {
+  width: 100%;
+}
+
+.pentagon-text {
+  position: absolute;
+  top: 60%; /* push text down inside pentagon */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px; /* space between number and description */
+}
+
+.desc {
+  font-size: 0.6rem;
+  margin-top: 5px; /* pushes the description further down */
+}
+
+.contact-section {
+  height: 650px;
+  width: 1400px;
+  margin: 0 auto; /* center section horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white; 
+  padding: 20px;
+  box-sizing: border-box; /* includes padding in width/height */
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.0rem;
+  margin-bottom: 60px;
+  font-weight: 550;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: none;                   /* remove all borders */
+  border-bottom: 2px solid #ccc;   /* add only bottom border */
+  background: transparent;         /* no background color */
+  padding: 20px 0;                 /* space inside field */
+  width: 100%;                     /* full width inside form */
+  font-size: 1rem;
+  outline: none;                   /* remove blue outline */
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: var(--primary-color); /* highlight on focus */
+}
+
+.contact-form textarea {
+  resize: none; 
+  min-height: 0px;
+}
+ 
+/* centers the button and separates it from the form */
+.contact-cta {
+  text-align: center;
+  margin-top: 24px;       /* move it down from the form */
+}
+
+/* strong, specific rule so nothing else overrides it */
+#contact-cta.submit {
+  background: var(--primary-color);
+  color: white;
+  padding: 14px 28px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 550;
+  margin-top: 40px; /* space above button */
+  cursor: pointer;
+  display: inline-block;  /* prevents full-width stretch */
+  width: auto;            /* make sure it doesn’t take form width */
+}
+
+#contact-cta.submit:hover {
+  opacity: 0.9;
+}
+
+/* if any global rule still forces width:100%, nuke it: */
+#contact-cta.submit { width: auto !important; }
+
+.site-footer {
+  width: 100%;
+  height: 249px;
+  margin: 0 auto;
+  background: rgb(12, 12, 37);
+  color: #fff;
+  position: relative;          /* lets us pin the bottom text */
+  display: flex;
+  align-items: center;         /* vertical centering of the row */
+  justify-content: center;     /* horizontal centering of the row */
+  padding: 0 40px;
+}
+
+/* Center the logo+socials row in the middle */
+.footer-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 700px;                  /* bring logo & socials closer to the center */
+}
+
+
+
+
+/* Don’t use flex on the <img> itself */
+.footer-logo img {
+  display: block;
+  height: 40px;                /* tweak as you like */
+}
+
+/* Gap belongs on the container, not the <i> */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-socials i {
+  font-size: 24px;             /* icon size */
+  color: #fff;
+}
+
+/* Pin copyright at the bottom center */
+.footer-bottom {
+  position: absolute;
+  bottom: 25px;                 /* small breathing room from the edge */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0.8;
+}
